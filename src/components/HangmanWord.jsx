@@ -2,7 +2,7 @@ export default function HangmanWord({word,correctGuess,resetGame}){
     const guessArr = word.split("").map((letter)=>
         correctGuess.includes(letter) ? letter : "_");
     
-    if(guessArr.join("") === word){
+    if(word && guessArr.join("") === word){
         resetGame();
         alert("Yay! You win. Resetting game.")
     }
