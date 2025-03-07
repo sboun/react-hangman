@@ -1,0 +1,17 @@
+.pushable-button {
+    background-color: #FFB8CD;
+    border: black 1px solid;
+    border-radius: 10px;
+    width: 75px;
+    height: 20px;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.pushable-button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
